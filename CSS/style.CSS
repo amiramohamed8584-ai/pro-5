@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 75px;
+    background:-webkit-linear-gradient(top,black,rgb(14, 25, 124)) ;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+.brand{
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(233, 234, 243);
+}
+.header-content nav ul{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+.header-content nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(245, 245, 247);
+}
+#user-info{
+    display: none;
+}
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: -webkit-linear-gradient(bottom,black,rgb(4, 4, 100));
+    text-align: center;
+    padding: 25px;
+    width: 40%;
+    border-radius: 40px;
+}
+.section-form h2{
+    color: white;
+    font-size: 30px;
+}
+.section-form form input{
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px;
+    outline: none;
+    margin: 5px 0;
+    color: white;
+    caret-color: blue;
+    background-color: rgb(61, 81, 107);
+    font-size: 20px;
+}
+.section-form form input[type="submit"]:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.section-form form input[type="submit"]{
+    color: black;
+    font-size: 20px;
+}
+.products{
+    margin-top: 10px;
+
+}
+.card-img-top{
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    height: 480px;
+}
+.card-body{
+    
+    text-align: center;
+    line-height: 24px;
+  
+}
+.card-text{
+    flex-grow: 1;
+    min-height: 90px;
+    color: rgb(43, 43, 170);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.add-to-cart{
+    width: 130px;
+    border: 0;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: auto;
+}
+.cart{
+    margin: 0 15px;
+    position: relative;
+}
+.cart i{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.cart .padge{
+    position: absolute;
+    width: 25px;
+    font-size: 18px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    top: -10px;
+    right: -10px;
+    display: none;
+}
+.veiwproduct{
+    position: absolute;
+    width: 200px;
+    display: none;
+    background-color: ivory;
+    transform: translate(-40%,29px);
+    text-align: center;
+    padding: 10px;
+    outline: 3px solid darkblue;
+    color: blue;
+}
+.veiwproduct a{
+    display: block;
+  background: -webkit-linear-gradient(bottom,black,rgb(94, 4, 129));
+}
+.box{
+    position: relative;
+#show{position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        top: 4px;
+        display: none;
+        
+    }
+ .eye1 , .eye2{
+    position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 20px;
+        top: 19px;
+ }  
+ .eye1{
+    display: none;
+ } 
+ #show:checked ~ .eye1{
+    display: block;
+ }
+ #show:checked ~ .eye2{
+    display: none;
+ }
+}
+.remove{
+    width: 170px;
+    border: 0;
+    background-color: rgb(75, 111, 190);
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: auto;
+}
+@media(max-width:567px){
+    header{
+        height: auto;
+        padding: 10px 0;
+    }
+    .container{
+        width: 90%;
+    }
+    .header-content{
+        flex-direction: row;
+        height: auto;
+        gap: 10px;
+    }
+    .brand{
+        font-size: 28px;
+    }
+    .header-content nav ul{
+        gap: 10px;
+    }
+    .header-content nav ul li a {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .section-form{
+        width: 90%;
+        padding: 15px;
+        border-radius: 20px;
+        top: 55%;
+    }
+    .section-form h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .section-form form input{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .section-form form input[type="submit"]{
+        font-size: 18px;
+    }
+}
+@media(min-width:567px) and (max-width:800px){
+    .section-form{
+        width: 60%;
+    }
+}
+
+
